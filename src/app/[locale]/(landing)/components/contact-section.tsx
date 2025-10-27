@@ -1,37 +1,39 @@
 "use client";
 
-import { Mail, MessageCircle, Phone } from "lucide-react";
+import { Building2, FileText, Mail, Phone } from "lucide-react";
 import { motion } from "motion/react";
 import { useTranslations } from "next-intl";
 
 import GoogleMap from "@/app/[locale]/(landing)/components/google-map";
+import { siteConfig } from "@/config/site";
 
 export default function ContactSection() {
   const t = useTranslations("IndexPage.Contact");
 
   const contactInfo = [
     {
-      icon: Phone,
+      icon: FileText,
       label: t("license"),
-      value: "1200040998"
+      value: `${siteConfig.company.license}`
+    },
+    {
+      icon: Building2,
+      label: t("unifiedNumber"),
+      value: `${siteConfig.company.unifiedNumber}`
     },
     {
       icon: Phone,
-      label: t("unifiedNumber"),
-      value: "7039648097",
-      href: "tel:7039648097"
-    },
-    {
-      icon: MessageCircle,
       label: t("mobile"),
-      value: "0508544090",
-      href: "tel:+966508544090"
+      value: `${siteConfig.support.phone}`,
+      href: `tel:${siteConfig.support.phone}`,
+      target: "_self"
     },
     {
       icon: Mail,
       label: t("email"),
-      value: "contact@arkanaldaradv.com",
-      href: "mailto:contact@arkanaldaradv.com"
+      value: `${siteConfig.support.email}`,
+      href: `mailto:${siteConfig.support.email}`,
+      target: "_blank"
     }
   ];
 
@@ -107,14 +109,20 @@ export default function ContactSection() {
                         {info.label}
                       </p>
                       <p className="group-hover:text-primary text-primary truncate text-lg font-semibold transition-colors">
-                        {info.value}
+                        <span dir="ltr"> {info.value}</span>
                       </p>
                     </div>
                   </motion.div>
                 );
 
                 return info.href ? (
-                  <a key={index} href={info.href} className="block">
+                  <a
+                    key={index}
+                    href={info.href}
+                    target={info.target}
+                    rel="noopener noreferrer"
+                    className="block"
+                  >
                     {content}
                   </a>
                 ) : (

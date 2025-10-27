@@ -29,7 +29,7 @@ const Footer = () => {
   const socialLinks = [
     {
       icon: WhatsApp,
-      href: "https://wa.me/966508544090",
+      href: `${siteConfig.links.whatsapp}`,
       label: t("socialMedia.whatsapp"),
       target: "_blank"
     },
@@ -41,7 +41,7 @@ const Footer = () => {
     },
     {
       icon: Phone,
-      href: "tel:+966508544090",
+      href: `tel:${siteConfig.support.phone}`,
       label: "Phone",
       target: "_self"
     },
