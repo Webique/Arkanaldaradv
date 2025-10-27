@@ -2,6 +2,152 @@
   "IndexPage": {
     "WhatsAppFloat": {
       "tooltip": "Contact us via WhatsApp"
+    },
+    "Hero": {
+      "title": "Arkan Al Dar Al Mutaqadima",
+      "subtitle": "Your Trusted Partner in Integrated Real Estate Solutions",
+      "description": "A Saudi real estate firm specialized in providing comprehensive and innovative real estate solutions, representing our clients with complete transparency and professionalism",
+      "cta": "Request Service Now",
+      "learnMore": "Learn More"
+    },
+    "About": {
+      "title": "About Us",
+      "subtitle": "About Arkan Al Dar Al Mutaqadima",
+      "description": "Arkan Al Dar Al Mutaqadima is a Saudi real estate firm specialized in providing comprehensive and innovative real estate solutions, representing our clients with complete transparency and professionalism in the real estate market, ensuring the highest levels of service and reliability.",
+      "independence": "We are distinguished as an independent office, officially licensed with FAL license number (1200040998), and are not affiliated with any specific development or marketing entity, which gives us the ability to provide fair and impartial real estate advice aimed at achieving complete client satisfaction.",
+      "compliance": "We always follow the latest regulations and guidelines of the General Authority of Real Estate to ensure service quality and full compliance with regulations."
+    },
+    "Services": {
+      "title": "Our Services",
+      "subtitle": "We offer a diverse range of specialized real estate services",
+      "buyingSelling": {
+        "title": "Property Sales & Acquisitions",
+        "description": "Comprehensive services for buying and selling residential and commercial properties at the best prices"
+      },
+      "leasing": {
+        "title": "Property Leasing",
+        "description": "Flexible leasing solutions for residential and commercial properties with professional management"
+      },
+      "propertyManagement": {
+        "title": "Property Management",
+        "description": "Comprehensive property and owners association management with the highest quality standards"
+      },
+      "digitalMarketing": {
+        "title": "Digital Real Estate Marketing",
+        "description": "Professional real estate marketing through official platforms and digital channels"
+      },
+      "consulting": {
+        "title": "Real Estate Consulting",
+        "description": "Specialized real estate consulting to help you make the right decisions"
+      }
+    },
+    "Vision": {
+      "title": "Our Vision",
+      "description": "To be the first choice for clients in providing specialized real estate consulting and providing the right property at the best price, service, and value."
+    },
+    "Values": {
+      "title": "Our Values",
+      "subtitle": "The principles we uphold in our work",
+      "trust": {
+        "title": "Trust",
+        "description": "Trustworthiness in dealing with all our clients and partners"
+      },
+      "honesty": {
+        "title": "Honesty",
+        "description": "Honesty in describing and presenting all properties"
+      },
+      "commitment": {
+        "title": "Commitment",
+        "description": "Commitment to schedules and specified agreements"
+      },
+      "fulfillment": {
+        "title": "Fulfillment",
+        "description": "Fulfillment of contracts and commitments with our clients"
+      },
+      "respect": {
+        "title": "Respect",
+        "description": "Mutual respect with clients and partners"
+      }
+    },
+    "Goals": {
+      "title": "Our Goals",
+      "subtitle": "We strive to achieve ambitious goals that serve our clients and the real estate market",
+      "goal1": "Intensify our efforts to meet customer needs and desires by providing innovative and unconventional real estate solutions",
+      "goal2": "Develop digital real estate marketing methods in line with market aspirations",
+      "goal3": "Enhance trust and transparency in real estate dealings to achieve long-term relationships with clients"
+    },
+    "Strategy": {
+      "title": "Our Strategy",
+      "description": "In line with Saudi Vision 2030, we seek to contribute to the development of the national economy by supporting digital transformation in the real estate sector and providing integrated and smart real estate services that keep pace with market developments and meet the aspirations of investors, owners, and tenants alike."
+    },
+    "Contact": {
+      "title": "Contact Us",
+      "subtitle": "We are here to serve you 24/7",
+      "license": "FAL License",
+      "unifiedNumber": "Unified Number",
+      "mobile": "Mobile",
+      "email": "Email",
+      "getInTouch": "Start Your Real Estate Journey With Us",
+      "description": "Contact us today and get a free real estate consultation"
+    },
+    "Stats": {
+      "experience": "Years of Experience",
+      "clients": "Satisfied Clients",
+      "properties": "Properties Marketed",
+      "success": "Success Rate"
+    },
+    "Features": {
+      "title": "Why Choose Us",
+      "subtitle": "Discover what makes us your ideal real estate partner",
+      "licensed": {
+        "title": "Officially Licensed",
+        "description": "Licensed by the General Authority of Real Estate with FAL license number 1200040998"
+      },
+      "trusted": {
+        "title": "Trusted & Independent",
+        "description": "Independent office not affiliated with any development entity, ensuring impartial advice"
+      },
+      "support": {
+        "title": "24/7 Support",
+        "description": "Round-the-clock customer support to serve you anytime, anywhere"
+      },
+      "experience": {
+        "title": "Proven Experience",
+        "description": "Years of experience in the Saudi real estate market with hundreds of successful deals"
+      },
+      "innovative": {
+        "title": "Innovative Solutions",
+        "description": "We use the latest technologies and methods in real estate marketing and management"
+      },
+      "fast": {
+        "title": "Fast Service",
+        "description": "Quick response and efficient execution to meet your real estate needs promptly"
+      }
+    },
+    "Testimonials": {
+      "title": "Client Testimonials",
+      "subtitle": "What our clients say about their experience with us",
+      "client1": {
+        "name": "Ahmed Al-Qahtani",
+        "role": "Property Owner",
+        "text": "Excellent experience with Arkan Al Dar Al Mutaqadima. They helped me sell my property at the best price in record time. Highly professional and trustworthy team."
+      },
+      "client2": {
+        "name": "Fatima Al-Harbi",
+        "role": "Real Estate Investor",
+        "text": "I've been working with them for over two years. Their real estate consulting is exceptional and has helped me make smart investment decisions. I highly recommend them."
+      },
+      "client3": {
+        "name": "Mohammed Al-Otaibi",
+        "role": "Tenant",
+        "text": "They helped me find the perfect apartment that met all my requirements. Professional service and continuous follow-up even after signing the contract."
+      }
+    },
+    "CTA": {
+      "title": "Ready to Start Your Real Estate Journey?",
+      "subtitle": "Contact us today and get a free real estate consultation",
+      "callNow": "Call Now",
+      "whatsapp": "Contact via WhatsApp"
     }
   },
   "Error": {
