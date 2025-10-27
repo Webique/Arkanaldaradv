@@ -31,7 +31,7 @@ export default function AboutSection() {
       id="about"
       className="relative overflow-hidden bg-gradient-to-b from-white to-[#F6F7ED] py-20 md:py-32"
     >
-      <div className="container mx-auto px-4">
+      <div className="layout px-4">
         <m.div
           initial="hidden"
           whileInView="visible"

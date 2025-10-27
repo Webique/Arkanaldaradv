@@ -1,15 +1,17 @@
 "use client";
 
-import * as React from "react";
-
 import { siteConfig } from "@/config/site";
 
-export default function GoogleMap() {
+export default function GoogleMap({
+  height = 400
+}: {
+  height?: number | string;
+}) {
   return (
     <iframe
       src={siteConfig.links.googleMapIframe}
       width="100%"
-      height="400"
+      height={height}
       style={{ border: 0 }}
       allowFullScreen
       loading="lazy"

@@ -1,8 +1,10 @@
 "use client";
 
-import { Mail, MapPin, MessageCircle, Phone } from "lucide-react";
+import { Mail, MessageCircle, Phone } from "lucide-react";
 import { motion } from "motion/react";
 import { useTranslations } from "next-intl";
+
+import GoogleMap from "@/app/[locale]/(landing)/components/google-map";
 
 export default function ContactSection() {
   const t = useTranslations("IndexPage.Contact");
@@ -11,29 +13,25 @@ export default function ContactSection() {
     {
       icon: Phone,
       label: t("license"),
-      value: "1200040998",
-      color: "from-[#001F3F] to-[#1E488F]"
+      value: "1200040998"
     },
     {
       icon: Phone,
       label: t("unifiedNumber"),
       value: "7039648097",
-      href: "tel:7039648097",
-      color: "from-[#00804C] to-[#74C365]"
+      href: "tel:7039648097"
     },
     {
       icon: MessageCircle,
       label: t("mobile"),
       value: "0508544090",
-      href: "tel:+966508544090",
-      color: "from-[#1E488F] to-[#00804C]"
+      href: "tel:+966508544090"
     },
     {
       icon: Mail,
       label: t("email"),
       value: "contact@arkanaldaradv.com",
-      href: "mailto:contact@arkanaldaradv.com",
-      color: "from-[#74C365] to-[#DBE64C]"
+      href: "mailto:contact@arkanaldaradv.com"
     }
   ];
 
@@ -57,9 +55,15 @@ export default function ContactSection() {
   return (
     <section
       id="contact"
-      className="relative overflow-hidden bg-gradient-to-b from-white to-[#F6F7ED] py-20 md:py-32"
+      className="relative overflow-hidden bg-gradient-to-b from-white via-[#F6F7ED]/30 to-white py-20 md:py-32"
     >
-      <div className="container mx-auto px-4">
+      {/* Decorative Elements */}
+      <div className="pointer-events-none absolute inset-0 overflow-hidden">
+        <div className="bg-primary/5 absolute -left-32 top-1/4 h-64 w-64 rounded-full blur-3xl" />
+        <div className="bg-primary/5 absolute -right-32 bottom-1/4 h-64 w-64 rounded-full blur-3xl" />
+      </div>
+
+      <div className="layout relative px-4">
         <motion.div
           initial="hidden"
           whileInView="visible"
@@ -68,18 +72,22 @@ export default function ContactSection() {
           className="mx-auto max-w-6xl"
         >
           <motion.div variants={itemVariants} className="mb-16 text-center">
-            <h2 className="mb-4 text-4xl font-bold text-[#001F3F] md:text-5xl">
+            <h2 className="text-primary mb-4 text-4xl font-bold md:text-5xl">
               {t("title")}
             </h2>
-            <p className="text-lg text-[#1E488F] md:text-xl">{t("subtitle")}</p>
+            <p className="text-primary/80 text-lg md:text-xl">
+              {t("subtitle")}
+            </p>
           </motion.div>
 
           <div className="grid gap-8 lg:grid-cols-2 lg:gap-12">
             {/* Contact Info */}
-            <motion.div variants={itemVariants} className="space-y-6">
-              <div className="rounded-2xl bg-gradient-to-br from-[#001F3F] to-[#1E488F] p-8 text-[#F6F7ED] shadow-xl">
-                <h3 className="mb-4 text-2xl font-bold">{t("getInTouch")}</h3>
-                <p className="text-lg text-[#F6F7ED]/90">{t("description")}</p>
+            <motion.div variants={itemVariants} className="space-y-5">
+              <div className="rounded-3xl bg-gradient-to-br from-[#001F3F] to-[#1E488F] p-8 text-white shadow-2xl">
+                <h3 className="mb-3 text-2xl font-bold">{t("getInTouch")}</h3>
+                <p className="text-base leading-relaxed text-white/90">
+                  {t("description")}
+                </p>
               </div>
 
               {contactInfo.map((info, index) => {
@@ -88,19 +96,17 @@ export default function ContactSection() {
                   <motion.div
                     key={index}
                     variants={itemVariants}
-                    whileHover={{ x: 5 }}
-                    className="group flex items-center gap-4 rounded-xl bg-white p-6 shadow-md transition-shadow hover:shadow-lg"
+                    whileHover={{ scale: 1.02, y: -2 }}
+                    className="border-primary/10 hover:border-primary/30 group flex items-center gap-5 rounded-2xl border bg-white p-6 shadow-lg transition-all hover:shadow-xl"
                   >
-                    <div
-                      className={`flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-gradient-to-br ${info.color}`}
-                    >
-                      <Icon className="h-6 w-6 text-[#F6F7ED]" />
+                    <div className="bg-primary/10 group-hover:bg-primary/20 flex h-14 w-14 shrink-0 items-center justify-center rounded-xl transition-all">
+                      <Icon className="text-primary h-6 w-6 transition-colors" />
                     </div>
-                    <div className="flex-1">
-                      <p className="mb-1 text-sm font-medium text-[#1E488F]">
+                    <div className="min-w-0 flex-1">
+                      <p className="text-primary/70 mb-1 text-sm font-medium">
                         {info.label}
                       </p>
-                      <p className="text-lg font-semibold text-[#001F3F] group-hover:text-[#00804C]">
+                      <p className="group-hover:text-primary text-primary truncate text-lg font-semibold transition-colors">
                         {info.value}
                       </p>
                     </div>
@@ -117,40 +123,19 @@ export default function ContactSection() {
               })}
             </motion.div>
 
-            {/* Map Placeholder */}
+            {/* Map */}
             <motion.div
               variants={itemVariants}
-              className="relative h-[500px] overflow-hidden rounded-2xl bg-gradient-to-br from-[#F6F7ED] via-[#DBE64C]/10 to-[#74C365]/10 shadow-xl lg:h-full"
+              whileHover={{ scale: 1.02 }}
+              className="border-primary/10 hover:shadow-3xl relative h-[500px] overflow-hidden rounded-3xl border shadow-2xl transition-shadow lg:h-full"
             >
-              {/* Decorative elements */}
-              <div className="absolute left-1/4 top-1/4 h-32 w-32 rounded-full bg-[#74C365]/20 blur-3xl" />
-              <div className="absolute bottom-1/4 right-1/4 h-40 w-40 rounded-full bg-[#DBE64C]/20 blur-3xl" />
-
-              <div className="flex h-full items-center justify-center p-8">
-                <div className="text-center">
-                  <motion.div
-                    initial={{ scale: 0 }}
-                    whileInView={{ scale: 1 }}
-                    viewport={{ once: true }}
-                    transition={{ type: "spring", delay: 0.2 }}
-                    className="mx-auto mb-6 flex h-24 w-24 items-center justify-center rounded-full bg-gradient-to-br from-[#001F3F] to-[#1E488F] shadow-lg"
-                  >
-                    <MapPin className="h-12 w-12 text-[#F6F7ED]" />
-                  </motion.div>
-                  <p className="mb-2 text-2xl font-bold text-[#001F3F]">
-                    المملكة العربية السعودية
-                  </p>
-                  <p className="text-lg text-[#1E488F]">
-                    Kingdom of Saudi Arabia
-                  </p>
-                  <div className="mt-6 flex items-center justify-center gap-2">
-                    <div className="h-2 w-2 rounded-full bg-[#74C365]" />
-                    <span className="text-sm text-[#1E488F]">
-                      متاحون الآن • Available Now
-                    </span>
-                  </div>
-                </div>
-              </div>
+              <motion.div
+                className="h-full"
+                whileHover={{ scale: 1.05 }}
+                transition={{ duration: 0.3 }}
+              >
+                <GoogleMap height="100%" />
+              </motion.div>
             </motion.div>
           </div>
         </motion.div>

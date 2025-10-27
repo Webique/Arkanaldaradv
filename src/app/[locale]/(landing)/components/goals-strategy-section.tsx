@@ -33,7 +33,7 @@ export default function GoalsStrategySection() {
 
   return (
     <section className="relative overflow-hidden bg-white py-20 md:py-32">
-      <div className="container mx-auto px-4">
+      <div className="layout px-4">
         <m.div
           initial="hidden"
           whileInView="visible"

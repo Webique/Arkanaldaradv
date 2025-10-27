@@ -55,7 +55,7 @@ const Footer = () => {
 
   return (
     <footer className="bg-gradient-to-b from-gray-900 to-gray-950 text-white">
-      <div className="container mx-auto px-4 py-16">
+      <div className="layout px-4 py-16">
         <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-4">
           {/* Company Info */}
           <m.div
