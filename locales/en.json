@@ -17,14 +17,14 @@
     "backToHome": "Back to home"
   },
   "LocaleLayout": {
-    "name": "Arkan Al Dar Al Mutaqadima | Comprehensive and Innovative Real Estate Solutions",
+    "name": "Arkan Al Dar Al Mutaqadima | Your Trusted Partner in Integrated Real Estate Solutions",
     "short_name": "Arkan Al Dar Al Mutaqadima",
-    "description": "Arkan Al Dar Al Mutaqadima is a Saudi real estate company specialized in providing comprehensive and innovative real estate solutions, representing its clients with complete transparency and professionalism in the real estate market, ensuring the highest levels of service and reliability. We are distinguished as an independent office officially licensed with FAL license number (1200040998), and we are not affiliated with any specific development or marketing entity, which gives us the ability to provide impartial and neutral real estate advice aimed at achieving complete customer satisfaction.",
+    "description": "Arkan Al Dar Al Mutaqadima is a leading Saudi real estate firm, officially licensed by the General Authority of Real Estate with FAL license number (1200040998). We specialize in delivering integrated and innovative real estate solutions encompassing sales and acquisitions, leasing, property management, and real estate consulting. As an independent office with no affiliation to any development or marketing entity, we are committed to providing objective and impartial advice that prioritizes our clients' best interests, upholding the highest standards of transparency, professionalism, and reliability.",
     "keywords": [
       "Arkan Al Dar Al Mutaqadima",
-      "Real Estate",
-      "Buying and Selling Properties",
-      "Property Rental",
+      "Saudi Real Estate",
+      "Property Sales and Acquisitions",
+      "Property Leasing",
       "Property Management",
       "Owners Association",
       "Real Estate Marketing",
@@ -33,8 +33,9 @@
       "Commercial Properties",
       "FAL License",
       "General Authority of Real Estate",
-      "Real Estate Services",
-      "Licensed Real Estate Office"
+      "Integrated Real Estate Services",
+      "Licensed Real Estate Office",
+      "Certified Real Estate Broker"
     ]
   },
   "LocaleSwitcher": {
