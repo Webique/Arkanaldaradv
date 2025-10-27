@@ -159,6 +159,8 @@ const Footer = () => {
               <a
                 href={`mailto:${siteConfig.support.email}`}
                 className="flex items-start gap-3 text-sm text-gray-400 transition-colors hover:text-white"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <Mail className="mt-1 h-4 w-4 shrink-0" />
                 <span>{siteConfig.support.email}</span>
