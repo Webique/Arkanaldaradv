@@ -1,12 +1,12 @@
 "use client";
 
 import { useHeadroom } from "@mantine/hooks";
+import { Phone } from "lucide-react";
 import * as m from "motion/react-m";
 import { useTranslations } from "next-intl";
 import * as React from "react";
 
 import LocaleSwitcher from "@/components/locale-switcher";
-import { Button } from "@/components/ui/button";
 import Logo from "@/components/ui/logo";
 import { siteConfig } from "@/config/site";
 import { Link } from "@/i18n/navigation.public";
@@ -80,18 +80,15 @@ export default function Header() {
             <LocaleSwitcher isTop={false} />
 
             <div className="flex items-center">
-              <Button
-                className="group me-2 rounded-full px-5 py-5 shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-2xl lg:inline-flex"
-                asChild
+              <Link
+                href={siteConfig.links.whatsapp}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hidden items-center gap-2 rounded-full bg-gradient-to-r from-[#001F3F] to-[#1E488F] px-6 py-3 text-sm font-semibold text-[#F6F7ED] shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl lg:flex"
               >
-                <Link
-                  href={siteConfig.links.whatsapp}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  {t("cta")}
-                </Link>
-              </Button>
+                <Phone className="size-4" />
+                {t("cta")}
+              </Link>
             </div>
           </m.div>
 
@@ -172,20 +169,16 @@ export default function Header() {
                 transition={{ delay: 0.5, duration: 0.4 }}
                 className="border-t pt-4"
               >
-                <Button
-                  className="bg-primary hover:bg-primary/90 text-primary-foreground w-full shadow-lg transition-all duration-300 hover:shadow-2xl"
-                  asChild
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href={siteConfig.links.whatsapp}
+                  onClick={() => setIsMenuOpen(false)}
+                  className="from-primary to-primary/70 flex items-center justify-center gap-2 rounded-full bg-gradient-to-r px-6 py-3 text-sm font-semibold text-[#F6F7ED] shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl"
                 >
-                  <a
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="block w-full"
-                    href={siteConfig.links.whatsapp}
-                    onClick={() => setIsMenuOpen(false)}
-                  >
-                    {t("cta")}
-                  </a>
-                </Button>
+                  <Phone className="size-4" />
+                  {t("cta")}
+                </a>
               </m.div>
             </div>
           </nav>
