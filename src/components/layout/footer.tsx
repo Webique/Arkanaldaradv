@@ -30,22 +30,26 @@ const Footer = () => {
     {
       icon: WhatsApp,
       href: "https://wa.me/966508544090",
-      label: t("socialMedia.whatsapp")
+      label: t("socialMedia.whatsapp"),
+      target: "_blank"
     },
     {
       icon: Mail,
       href: `mailto:${siteConfig.support.email}`,
-      label: t("socialMedia.email")
+      label: t("socialMedia.email"),
+      target: "_blank"
     },
     {
       icon: Phone,
       href: "tel:+966508544090",
-      label: "Phone"
+      label: "Phone",
+      target: "_self"
     },
     {
       icon: MapPin,
       href: "#contact",
-      label: "Location"
+      label: "Location",
+      target: "_blank"
     }
   ];
 
@@ -180,7 +184,7 @@ const Footer = () => {
                     <m.a
                       key={social.label}
                       href={social.href}
-                      target="_blank"
+                      target={social.target}
                       rel="noopener noreferrer"
                       className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-gray-400 transition-all hover:bg-white/20"
                       aria-label={social.label}
