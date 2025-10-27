@@ -1,0 +1,89 @@
+{
+  "IndexPage": {
+    "WhatsAppFloat": {
+      "tooltip": "Contact us via WhatsApp"
+    }
+  },
+  "Error": {
+    "title": "Sorry, an unexpected error occurred!",
+    "description": "<p>We apologize for this error we encountered.</p><p>You can try <retry>reloading the page</retry> you were visiting.</p>"
+  },
+  "NotFoundPage": {
+    "title": "Page not found",
+    "description": "Sorry, please check the address bar in your browser or use the navigation to go to a known page.",
+    "retryButton": "Try again",
+    "contactSupport": "Contact support",
+    "goBack": "Go back",
+    "backToHome": "Back to home"
+  },
+  "LocaleLayout": {
+    "name": "Arkan Al Dar Al Mutaqadima | Comprehensive and Innovative Real Estate Solutions",
+    "short_name": "Arkan Al Dar Al Mutaqadima",
+    "description": "Arkan Al Dar Al Mutaqadima is a Saudi real estate company specialized in providing comprehensive and innovative real estate solutions, representing its clients with complete transparency and professionalism in the real estate market, ensuring the highest levels of service and reliability. We are distinguished as an independent office officially licensed with FAL license number (1200040998), and we are not affiliated with any specific development or marketing entity, which gives us the ability to provide impartial and neutral real estate advice aimed at achieving complete customer satisfaction.",
+    "keywords": [
+      "Arkan Al Dar Al Mutaqadima",
+      "Real Estate",
+      "Buying and Selling Properties",
+      "Property Rental",
+      "Property Management",
+      "Owners Association",
+      "Real Estate Marketing",
+      "Real Estate Consulting",
+      "Residential Properties",
+      "Commercial Properties",
+      "FAL License",
+      "General Authority of Real Estate",
+      "Real Estate Services",
+      "Licensed Real Estate Office"
+    ]
+  },
+  "LocaleSwitcher": {
+    "label": "Change language",
+    "locale": "{locale, select, ar {🇸🇦 Arabic} en {🇺🇸 English} other {Unknown}}"
+  },
+  "Header": {
+    "nav": {
+      "home": "Home",
+      "about": "About Us",
+      "services": "Our Services",
+      "contact": "Contact Us"
+    },
+    "cta": "Request Service Now",
+    "siteName": "Arkan Al Dar Al Mutaqadima",
+    "siteDescription": "Comprehensive and Innovative Real Estate Solutions",
+    "available24_7": "Available 24/7"
+  },
+  "Footer": {
+    "home": "Home",
+    "about": "About Us",
+    "vision": "Vision and Mission",
+    "identity": "Corporate Identity",
+    "location": "Our Location",
+    "quickLinks": "Quick Links",
+    "services": "Our Services",
+    "contactUs": "Contact Us",
+    "clients": "Our Clients",
+    "testimonials": "Client Testimonials",
+    "available24_7": "Available 24/7",
+    "connectViaWhatsApp": "Contact us via WhatsApp",
+    "copyright": "© {year} Arkan Al Dar Al Mutaqadima. All rights reserved",
+    "companyDescription": "We specialize in providing comprehensive and innovative real estate solutions, with a focus on transparency, professionalism, and reliability in serving our clients",
+    "realEstateServices": "Buying and Selling Services",
+    "propertyManagement": "Property Management",
+    "realEstateMarketing": "Real Estate Marketing",
+    "realEstateConsulting": "Real Estate Consulting",
+    "socialMedia": {
+      "whatsapp": "WhatsApp",
+      "x": "X",
+      "instagram": "Instagram",
+      "linkedin": "LinkedIn",
+      "facebook": "Facebook",
+      "tiktok": "TikTok",
+      "email": "Email"
+    },
+    "ourLocation": "Our Location on Map",
+    "saudiArabia": "Kingdom of Saudi Arabia",
+    "license": "FAL License",
+    "unifiedNumber": "Unified Number"
+  }
+}
