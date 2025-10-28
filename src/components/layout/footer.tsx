@@ -4,7 +4,8 @@ import { Building2, FileText, Mail, MapPin, Phone } from "lucide-react";
 import * as m from "motion/react-m";
 import { useTranslations } from "next-intl";
 
-import WhatsApp from "@/assets/icons/whatsapp-2.svg";
+import Instagram from "@/assets/icons/instagram.svg";
+import TickTock from "@/assets/icons/tiktok.svg";
 import Logo from "@/components/ui/logo";
 import { siteConfig } from "@/config/site";
 
@@ -28,9 +29,15 @@ const Footer = () => {
 
   const socialLinks = [
     {
-      icon: WhatsApp,
-      href: `${siteConfig.links.whatsapp}`,
-      label: t("socialMedia.whatsapp"),
+      icon: Instagram,
+      href: `${siteConfig.links.instagram}`,
+      label: t("socialMedia.instagram"),
+      target: "_blank"
+    },
+    {
+      icon: TickTock,
+      href: `${siteConfig.links.tiktok}`,
+      label: t("socialMedia.tiktok"),
       target: "_blank"
     },
     {
@@ -47,7 +54,7 @@ const Footer = () => {
     },
     {
       icon: MapPin,
-      href: "#contact",
+      href: `${siteConfig.links.googleMap}`,
       label: "Location",
       target: "_blank"
     }
