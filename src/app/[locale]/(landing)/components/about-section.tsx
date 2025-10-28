@@ -2,6 +2,7 @@
 
 import { Building2, CheckCircle2, Info, Shield } from "lucide-react";
 import * as m from "motion/react-m";
+import ExportedImage from "next-image-export-optimizer";
 import { useTranslations } from "next-intl";
 
 export default function AboutSection() {
@@ -141,22 +142,33 @@ export default function AboutSection() {
               </m.div>
             </m.div>
 
-            {/* Right Column - License Card */}
+            {/* Right Column - License Card with Image */}
             <m.div variants={itemVariants} className="group relative">
               <div className="absolute -inset-1 rounded-3xl bg-gradient-to-r from-[#001F3F] to-[#1E488F] opacity-75 blur-xl transition duration-300 group-hover:opacity-100" />
 
               <m.div
                 whileHover={{ y: -4 }}
                 transition={{ duration: 0.3 }}
-                className="relative h-[400px] overflow-hidden rounded-3xl bg-gradient-to-br from-[#001F3F] to-[#1E488F] shadow-2xl md:h-[500px]"
+                className="relative h-[400px] overflow-hidden rounded-3xl shadow-2xl md:h-[500px]"
               >
+                {/* Background Image */}
+                <div className="absolute inset-0">
+                  <ExportedImage
+                    src="/images/home-in-hand.png"
+                    alt="Real Estate"
+                    fill
+                    className="object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-br from-[#001F3F]/95 to-[#1E488F]/90" />
+                </div>
+
                 <div className="absolute inset-0 bg-[url('/images/building-pattern.svg')] opacity-5" />
 
                 {/* Decorative circles */}
                 <div className="absolute start-10 top-10 h-32 w-32 rounded-full bg-white/5" />
                 <div className="absolute bottom-10 end-10 h-40 w-40 rounded-full bg-white/5" />
 
-                <div className="flex h-full items-center justify-center p-8">
+                <div className="relative flex h-full items-center justify-center p-8">
                   <div className="text-center text-white">
                     <m.div
                       initial={{ scale: 0, opacity: 0 }}

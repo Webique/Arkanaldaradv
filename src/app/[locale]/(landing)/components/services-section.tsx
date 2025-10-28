@@ -9,6 +9,7 @@ import {
   MessageSquare
 } from "lucide-react";
 import * as m from "motion/react-m";
+import ExportedImage from "next-image-export-optimizer";
 import { useTranslations } from "next-intl";
 
 export default function ServicesSection() {
@@ -18,27 +19,32 @@ export default function ServicesSection() {
     {
       icon: Home,
       titleKey: "buyingSelling.title",
-      descKey: "buyingSelling.description"
+      descKey: "buyingSelling.description",
+      image: "/images/2.jpg"
     },
     {
       icon: Key,
       titleKey: "leasing.title",
-      descKey: "leasing.description"
+      descKey: "leasing.description",
+      image: "/images/3.jpeg"
     },
     {
       icon: Building,
       titleKey: "propertyManagement.title",
-      descKey: "propertyManagement.description"
+      descKey: "propertyManagement.description",
+      image: "/images/4.jpeg"
     },
     {
       icon: Megaphone,
       titleKey: "digitalMarketing.title",
-      descKey: "digitalMarketing.description"
+      descKey: "digitalMarketing.description",
+      image: "/images/5.jpeg"
     },
     {
       icon: MessageSquare,
       titleKey: "consulting.title",
-      descKey: "consulting.description"
+      descKey: "consulting.description",
+      image: "/images/hero.jpg"
     }
   ];
 
@@ -117,8 +123,19 @@ export default function ServicesSection() {
 
                   {/* Main card */}
                   <div className="relative overflow-hidden rounded-2xl bg-white shadow-lg ring-1 ring-gray-100 transition-all group-hover:shadow-2xl">
-                    {/* Icon header with gradient background */}
-                    <div className="relative h-48 overflow-hidden bg-gradient-to-br from-[#001F3F] to-[#1E488F] p-8">
+                    {/* Icon header with image background */}
+                    <div className="relative h-48 overflow-hidden p-8">
+                      {/* Background Image */}
+                      <div className="absolute inset-0">
+                        <ExportedImage
+                          src={service.image}
+                          alt={t(service.titleKey as any)}
+                          fill
+                          className="object-cover transition-transform duration-500 group-hover:scale-110"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-br from-[#001F3F]/90 to-[#1E488F]/85" />
+                      </div>
+
                       {/* Decorative circles */}
                       <div className="absolute -end-10 -top-10 h-32 w-32 rounded-full bg-white/5" />
                       <div className="absolute -bottom-10 -start-10 h-32 w-32 rounded-full bg-white/5" />
