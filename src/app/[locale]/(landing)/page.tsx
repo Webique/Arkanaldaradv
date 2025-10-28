@@ -6,6 +6,7 @@ import { use } from "react";
 import WhatsAppFloat from "@/components/whats-app-float";
 
 import ContactSection from "./components/contact-section";
+import TestimonialsSection from "./components/testimonials-section";
 
 export default function IndexPage({ params }: PageProps<"/[locale]">) {
   const { locale } = use(params);
@@ -22,9 +23,8 @@ export default function IndexPage({ params }: PageProps<"/[locale]">) {
       <CTASection />
       <VisionValuesSection />
       <GoalsStrategySection />
-      <StatsSection />
+      <StatsSection /> */}
       <TestimonialsSection />
-       */}
       <ContactSection />
       <WhatsAppFloat />
     </main>
