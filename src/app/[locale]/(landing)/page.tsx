@@ -9,6 +9,7 @@ import ContactSection from "./components/contact-section";
 import GoalsStrategySection from "./components/goals-strategy-section";
 import StatsSection from "./components/stats-section";
 import TestimonialsSection from "./components/testimonials-section";
+import VisionValuesSection from "./components/vision-values-section";
 
 export default function IndexPage({ params }: PageProps<"/[locale]">) {
   const { locale } = use(params);
@@ -22,8 +23,8 @@ export default function IndexPage({ params }: PageProps<"/[locale]">) {
       <AboutSection />
       <FeaturesSection />
       <ServicesSection />
-      <CTASection />
-      <VisionValuesSection />*/}
+      <CTASection />*/}
+      <VisionValuesSection />
       <GoalsStrategySection />
       <StatsSection />
       <TestimonialsSection />
