@@ -64,7 +64,7 @@ export default function ServicesSection() {
   return (
     <section
       id="services"
-      className="relative overflow-hidden bg-gradient-to-b from-white via-gray-50 to-white py-20 md:py-32"
+      className="relative overflow-hidden bg-gradient-to-b from-white via-gray-50 to-white pb-20 md:pb-32"
     >
       {/* Decorative background elements */}
       <div className="absolute inset-0 overflow-hidden">
