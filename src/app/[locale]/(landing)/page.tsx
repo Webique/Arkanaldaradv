@@ -6,6 +6,7 @@ import { use } from "react";
 import WhatsAppFloat from "@/components/whats-app-float";
 
 import ContactSection from "./components/contact-section";
+import CTASection from "./components/cta-section";
 import GoalsStrategySection from "./components/goals-strategy-section";
 import StatsSection from "./components/stats-section";
 import TestimonialsSection from "./components/testimonials-section";
@@ -22,8 +23,8 @@ export default function IndexPage({ params }: PageProps<"/[locale]">) {
       {/* <HeroSection />
       <AboutSection />
       <FeaturesSection />
-      <ServicesSection />
-      <CTASection />*/}
+      <ServicesSection />*/}
+      <CTASection />
       <VisionValuesSection />
       <GoalsStrategySection />
       <StatsSection />
