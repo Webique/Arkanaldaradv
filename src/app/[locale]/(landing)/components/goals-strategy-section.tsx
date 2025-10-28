@@ -41,7 +41,7 @@ export default function GoalsStrategySection() {
   };
 
   return (
-    <section className="relative overflow-hidden bg-gradient-to-b from-white via-gray-50 to-white py-20 md:py-32">
+    <section className="relative overflow-hidden bg-gradient-to-b from-white via-gray-50 to-white pb-20 md:pb-32">
       {/* Decorative background elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute -start-20 top-1/4 h-96 w-96 rounded-full bg-[#1E488F]/5 blur-3xl" />
