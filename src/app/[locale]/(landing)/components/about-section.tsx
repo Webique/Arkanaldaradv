@@ -37,13 +37,12 @@ export default function AboutSection() {
         <div className="absolute -end-20 bottom-1/4 h-96 w-96 rounded-full bg-[#001F3F]/5 blur-3xl" />
       </div>
 
-      <div className="layout relative px-4">
+      <div className="layout relative max-w-6xl">
         <m.div
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
           variants={containerVariants}
-          className="mx-auto max-w-6xl"
         >
           {/* Header */}
           <m.div variants={itemVariants} className="mb-16 text-center">
@@ -74,7 +73,7 @@ export default function AboutSection() {
             >
               {/* About Card */}
               <m.div
-                whileHover={{ x: 8, scale: 1.02 }}
+                whileHover={{ x: 4 }}
                 transition={{ duration: 0.3 }}
                 className="group relative"
               >
@@ -177,19 +176,19 @@ export default function AboutSection() {
 
                       {/* License Number */}
                       <div className="mb-6 text-5xl font-bold md:text-6xl">
-                        1200040998
+                        {t("licenseNumber")}
                       </div>
 
                       {/* License Text */}
                       <p className="mb-2 text-xl font-semibold md:text-2xl">
-                        رخصة فال • FAL License
+                        {t("licenseText")}
                       </p>
 
                       {/* Divider */}
                       <div className="mt-6 flex items-center justify-center gap-4">
                         <div className="h-px w-12 bg-white/30" />
                         <span className="text-sm text-white/80">
-                          الهيئة العامة للعقار
+                          {t("authorityName")}
                         </span>
                         <div className="h-px w-12 bg-white/30" />
                       </div>

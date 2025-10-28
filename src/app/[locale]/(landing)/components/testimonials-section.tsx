@@ -56,7 +56,7 @@ export default function TestimonialsSection() {
         <div className="absolute -end-20 bottom-1/4 h-96 w-96 rounded-full bg-[#001F3F]/5 blur-3xl" />
       </div>
 
-      <div className="layout relative px-4">
+      <div className="layout relative">
         <m.div
           initial="hidden"
           whileInView="visible"

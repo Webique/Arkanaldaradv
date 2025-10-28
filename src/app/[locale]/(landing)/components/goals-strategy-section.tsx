@@ -48,13 +48,12 @@ export default function GoalsStrategySection() {
         <div className="absolute -end-20 bottom-1/3 h-96 w-96 rounded-full bg-[#001F3F]/5 blur-3xl" />
       </div>
 
-      <div className="layout relative px-4">
+      <div className="layout relative max-w-6xl">
         <m.div
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
           variants={containerVariants}
-          className="mx-auto max-w-6xl"
         >
           {/* Goals Section */}
           <div className="mb-20">

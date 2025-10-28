@@ -8,14 +8,18 @@
       "subtitle": "Your Trusted Partner in Integrated Real Estate Solutions",
       "description": "A Saudi real estate firm specialized in providing comprehensive and innovative real estate solutions, representing our clients with complete transparency and professionalism",
       "cta": "Request Service Now",
-      "learnMore": "Learn More"
+      "learnMore": "Learn More",
+      "license": "FAL License: 1200040998"
     },
     "About": {
       "title": "About Us",
       "subtitle": "About Arkan Al Dar Al Mutaqadima",
       "description": "Arkan Al Dar Al Mutaqadima is a Saudi real estate firm specialized in providing comprehensive and innovative real estate solutions, representing our clients with complete transparency and professionalism in the real estate market, ensuring the highest levels of service and reliability.",
       "independence": "We are distinguished as an independent office, officially licensed with FAL license number (1200040998), and are not affiliated with any specific development or marketing entity, which gives us the ability to provide fair and impartial real estate advice aimed at achieving complete client satisfaction.",
-      "compliance": "We always follow the latest regulations and guidelines of the General Authority of Real Estate to ensure service quality and full compliance with regulations."
+      "compliance": "We always follow the latest regulations and guidelines of the General Authority of Real Estate to ensure service quality and full compliance with regulations.",
+      "licenseNumber": "1200040998",
+      "licenseText": "رخصة فال • FAL License",
+      "authorityName": "الهيئة العامة للعقار"
     },
     "Services": {
       "title": "Our Services",
