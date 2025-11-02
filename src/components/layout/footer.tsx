@@ -73,6 +73,7 @@ const Footer = () => {
             className="flex flex-col space-y-6"
           >
             <Logo
+              src="/images/logonew1.png"
               imgClassName="invert w-36 sm:w-36 lg:w-40 brightness-0 saturate-0"
               className="lg:ps-8"
               width={160}
