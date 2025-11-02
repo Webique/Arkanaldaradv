@@ -15,12 +15,12 @@ export default function StatsSection() {
     },
     {
       icon: Users,
-      value: "500+",
+      value: "200+",
       labelKey: "clients"
     },
     {
       icon: Building2,
-      value: "1000+",
+      value: "400+",
       labelKey: "properties"
     },
     {
